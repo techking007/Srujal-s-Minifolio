@@ -123,6 +123,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-Made with ❤️ by [Srujal Shah]
+Made with ❤️ by Srujal Shah
 
 For questions or support, please [open an issue](https://github.com/techking007/Srujal-s-Minifolio/issues).
