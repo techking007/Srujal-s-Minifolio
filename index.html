@@ -289,6 +289,67 @@ initiatives.
         const isMobile = window.matchMedia('(max-width: 750px)').matches;
         let currentOpenModal = null;
 
+        // Add download notification for mobile browsers
+        document.querySelector('.header .cta').addEventListener('click', function(e) {
+            if (isMobile) {
+                e.preventDefault();
+                const downloadLink = this.href;
+                const fileName = this.getAttribute('download');
+                
+                // Show notification
+                const notification = document.createElement('div');
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: var(--accent-color);
+                    color: white;
+                    padding: 15px 25px;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    z-index: 1000;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    animation: slideIn 0.3s ease-out;
+                    text-align: center;
+                    max-width: 90%;
+                `;
+                notification.innerHTML = `
+                    <div>Resume downloaded!</div>
+                    <div style="font-size: 14px; margin-top: 5px; opacity: 0.9;">Check your downloads folder</div>
+                `;
+                document.body.appendChild(notification);
+
+                // Remove notification after 3 seconds
+                setTimeout(() => {
+                    notification.style.animation = 'slideOut 0.3s ease-out';
+                    setTimeout(() => notification.remove(), 300);
+                }, 3000);
+
+                // Trigger download
+                const link = document.createElement('a');
+                link.href = downloadLink;
+                link.download = fileName;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        });
+
+        // Add keyframes for notification animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translate(-50%, -100%); opacity: 0; }
+                to { transform: translate(-50%, 0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translate(-50%, 0); opacity: 1; }
+                to { transform: translate(-50%, -100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
         function openProjectModal(projectTile) {
             if (!isMobile && !event.target.closest('.project-links')) {
                 return;
