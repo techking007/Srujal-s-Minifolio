@@ -843,3 +843,25 @@ textarea {
         transform: translateY(-5px);
     }
 }
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.see-more .project-link {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.see-more .project-link:hover {
+    transform: translateY(-2px);
+    background: var(--accent-color);
+}
+
+.see-more .project-link i {
+    margin-right: 8px;
+}

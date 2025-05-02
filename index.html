@@ -6,18 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Srujal's MiniFolio</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#2d5bd0">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--=============== FONT AWESOME ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
     <nav id="navbar" class="navbar"><a href="#"></a></nav>
 
     <div class="container">
-        <!--=============== NAVIGATION MENU ===============-->
-
         <div class="menu">
             <a href="#welcome-section" class="menu-icon fa-solid fa-house"></a>
             <a href="#about" class="menu-icon fa-solid fa-user"></a>
@@ -26,11 +33,7 @@
             <a href="#contact" class="menu-icon fa-solid fa-envelope"></a>
         </div>
 
-        <!--=============== MAIN "WINDOW" ===============-->
-
         <div class="portfolio">
-            <!--=============== HEADER SECTION ===============-->
-
             <section class="header">
                 <img class="header-img"
                     src="img/Srujal's avatar pic.png"
@@ -42,9 +45,7 @@
                     <a href="https://www.linkedin.com/in/techking007" target="_blank" class="fa-brands fa-linkedin-in" id="profile-link"></a>
                     <a href="https://github.com/techking007" target="_blank" class="fa-brands fa-github"></a>
                     <a href="https://twitter.com/techking_007?t=8CzDD1mBMI93xucz7P9bXw&s=09" target="_blank" class="fa-brands fa-twitter"></a>
-                    <a href="mailto:itechking007@gmail.com" target="_blank" class="fa-regular fa-envelope">
-                    
-                    </a>
+                    <a href="mailto:itechking007@gmail.com" target="_blank" class="fa-regular fa-envelope"></a>
                 </div>
                 <a href="Srujal's Resume.pdf" 
                    class="cta" 
@@ -53,11 +54,7 @@
                    type="application/pdf">Download Resume</a>
             </section>
 
-            <!--=============== CONTENT SECTION ===============-->
-
             <div class="content">
-                <!--=============== HOME ===============-->
-
                 <section class="content-card home" id="welcome-section">
                     <h1>Come here Often? Myself <span class="highlight-text">Srujal Shah</span>.</h1>
                     <div class="scroll-down-arrow">
@@ -66,15 +63,11 @@
                     </div>
                 </section>
 
-                <!--=============== ABOUT ME ===============-->
-
                 <section class="content-card about" id="about">
                     <h1>About me</h1>
                     <div class="about-item about-me">
                         <p>
                             Hey, I'm Srujal Shah, a Computer Engineering student who's obsessed with creativity, communities, and all things digital. I've been working as a Social Media Manager, copywriter, Community Manager and also, developing projects and somehow, it all clicks. 
-
-
                         </p>
                         <p>
                             Currently blending code with creativity and building brands that matter. Active in SuperteamDAO & Solana. Passionate about community, freelancing, and conversations around Web3, branding, hackathons, and entrepreneurship.
@@ -95,7 +88,6 @@
                             <span class="skill">Framer</span>
                             <span class="skill">SEO</span>
                             <span class="skill">Canva</span>
-                            
                         </div>
 
                         <div class="about-item languages">
@@ -115,8 +107,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!--=============== PROJECTS ===============-->
 
                 <section class="content-card projects" id="projects">
                     <h1>Projects</h1>
@@ -190,18 +180,20 @@
                                         <h3>Minifolio</h3>
                                         <p>A minimalistic portfolio website for developers and marketers to showcase their work.</p>
                                         <div class="project-links">
-                                            <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                                            <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                            <a href="https://github.com/techking007/Srujal-s-Minifolio" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                            <a href="https://srujalminifolio.vercel.app/" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a target="_blank" href="https://github.com/techking007">see more...</a>
+                    <div class="see-more">
+                        <a href="https://github.com/techking007" target="_blank" class="project-link">
+                            <i class="fa-brands fa-github"></i> See More Projects
+                        </a>
+                    </div>
                 </section>
-
-                <!--=============== EXPERIENCE ===============-->
 
                 <section class="content-card experience" id="experience">
                     <h1>Experience</h1>
@@ -258,15 +250,13 @@
                                     <h3>Volunteer <a href="https://www.instagram.com/vadodarafoss/" target="_blank">@VadodaraFOSS</a></h3>
                                     <p>
                                         I held the position of Content Writer at VadodaraFOSS, where I contributed to the organization's content development
-                                        initiatives.
+initiatives.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
-                <!--=============== CONTACT ===============-->
 
                 <section class="content-card contact" id="contact">
                     <h1>Contact</h1>
@@ -296,78 +286,62 @@
         </div>
     </div>
     <script>
-        // Step 1: Initialize variables and check device type
         const isMobile = window.matchMedia('(max-width: 750px)').matches;
         let currentOpenModal = null;
 
-        // Step 2: Handle project tile click
         function openProjectModal(projectTile) {
-            // Only proceed if mobile or if clicked on a link/button on desktop
             if (!isMobile && !event.target.closest('.project-links')) {
-                return; // Don't open modal on desktop unless clicking links
+                return;
             }
 
-            // Get the overlay element
             const overlay = projectTile.querySelector('.overlay');
             if (!overlay) return;
 
-            // Step 3: Prepare the modal opening
             currentOpenModal = overlay;
             
-            // Lock scroll only on desktop
             if (!isMobile) {
                 document.body.classList.add('modal-open');
             }
 
-            // Step 4: Show the modal with animation
             requestAnimationFrame(() => {
                 overlay.classList.add('active');
             });
 
-            // Step 5: Add event listeners for closing
             overlay.addEventListener('click', handleOverlayClick);
             document.addEventListener('keydown', handleEscapeKey);
         }
 
-        // Step 6: Handle modal closing
         function closeProjectModal(event) {
             if (event) {
-                event.stopPropagation(); // Prevent event bubbling
+                event.stopPropagation();
             }
 
             if (!currentOpenModal) return;
 
-            // Step 7: Start closing animation
             currentOpenModal.classList.remove('active');
 
-            // Step 8: Clean up after animation
             setTimeout(() => {
-                // Only restore scroll on desktop
                 if (!isMobile) {
                     document.body.classList.remove('modal-open');
                 }
                 currentOpenModal = null;
-            }, 300); // Match this with CSS transition duration
+            }, 300);
 
-            // Step 9: Remove event listeners
             document.removeEventListener('keydown', handleEscapeKey);
         }
 
-        // Step 10: Handle clicking outside the modal
         function handleOverlayClick(event) {
             if (event.target.classList.contains('overlay')) {
                 closeProjectModal();
             }
         }
 
-        // Step 11: Handle escape key press
         function handleEscapeKey(event) {
             if (event.key === 'Escape') {
                 closeProjectModal();
             }
         }
 
-        // Step 12: Handle window resize
         window.addEventListener('resize', () => {
             const isNowMobile = window.matchMedia('(max-width: 750px)').matches;
             if (currentOpenModal && isNowMobile !== isMobile) {
@@ -375,23 +349,19 @@
             }
         });
 
-        // Form submission handling
         const form = document.getElementById('form');
         const submitButton = document.getElementById('submit');
 
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            // Disable submit button and show loading state
             submitButton.disabled = true;
             submitButton.value = 'Sending...';
 
             try {
-                // Get form data
                 const formData = new FormData(this);
                 const formObject = Object.fromEntries(formData);
 
-                // Submit to Web3Forms
                 const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
                     headers: {
@@ -403,7 +373,6 @@
                 const data = await response.json();
 
                 if (data.success) {
-                    // Optional: Submit to Google Sheets
                     try {
                         await fetch('https://script.google.com/macros/s/AKfycbwTl9V3G8RbSOp-2XEGTQAyHkA1m6gpbK2ygiP5tgbBG3Fy18HvMFIcHI4Sbjly-au6DA/exec', {
                             method: 'POST',
@@ -420,10 +389,8 @@
                         });
                     } catch (error) {
                         console.error('Google Sheets Error:', error);
-                        // Continue with success flow even if Google Sheets fails
                     }
 
-                    // Redirect to success page
                     window.location.href = 'https://web3forms.com/success';
                 } else {
                     throw new Error('Form submission failed');
@@ -432,7 +399,6 @@
                 console.error('Error:', error);
                 alert('There was an error submitting the form. Please try again.');
                 
-                // Re-enable submit button
                 submitButton.disabled = false;
                 submitButton.value = 'Submit';
             }
