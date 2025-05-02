@@ -56,12 +56,17 @@
 
             <div class="content">
                 <section class="content-card home" id="welcome-section">
-                    <h1>Come here Often? Myself <span class="highlight-text">Srujal Shah</span>.</h1>
+                    <h1>Come here Often? Myself <span class="highlight-text">Srujal Shah</span></h1>
                     <div class="scroll-down-arrow">
                         <span class="scroll-text">Scroll for growth</span>
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
                 </section>
+
+                <button class="mobile-scroll-cta" onclick="scrollToAbout()">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    Explore More
+                </button>
 
                 <section class="content-card about" id="about">
                     <h1>About me</h1>
@@ -288,6 +293,38 @@ initiatives.
     <script>
         const isMobile = window.matchMedia('(max-width: 750px)').matches;
         let currentOpenModal = null;
+
+        // Add scroll to about section function
+        function scrollToAbout() {
+            const aboutSection = document.getElementById('about');
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Handle mobile CTA visibility
+        if (isMobile) {
+            const mobileCta = document.querySelector('.mobile-scroll-cta');
+            const content = document.querySelector('.content');
+            
+            // Show CTA initially
+            mobileCta.classList.add('visible');
+
+            // Handle scroll
+            content.addEventListener('scroll', () => {
+                if (content.scrollTop === 0) {
+                    // At the top of the page
+                    mobileCta.classList.add('visible');
+                } else {
+                    // Scrolled down
+                    mobileCta.classList.remove('visible');
+                }
+            });
+
+            // Hide CTA when clicked
+            mobileCta.addEventListener('click', () => {
+                mobileCta.classList.remove('visible');
+                scrollToAbout();
+            });
+        }
 
         // Add download notification for mobile browsers
         document.querySelector('.header .cta').addEventListener('click', function(e) {

@@ -825,6 +825,47 @@ textarea {
     cursor: pointer;
 }
 
+.mobile-scroll-cta {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-scroll-cta.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-scroll-cta:hover {
+    background-color: #1a3d8f;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+@media screen and (max-width: 750px) {
+    .mobile-scroll-cta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .scroll-down-arrow {
+        display: none;
+    }
+}
+
 .scroll-text {
     color: var(--light-grey);
     font-size: 0.9rem;
