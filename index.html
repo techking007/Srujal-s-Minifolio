@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srujal's MiniFolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--=============== FONT AWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <nav id="navbar" class="navbar"><a href="#"></a></nav>
+
+    <div class="container">
+        <!--=============== NAVIGATION MENU ===============-->
+
+        <div class="menu">
+            <a href="#welcome-section" class="menu-icon fa-solid fa-house"></a>
+            <a href="#about" class="menu-icon fa-solid fa-user"></a>
+            <a href="#projects" class="menu-icon fa-solid fa-code"></a>
+            <a href="#experience" class="menu-icon fa-solid fa-briefcase"></a>
+            <a href="#contact" class="menu-icon fa-solid fa-envelope"></a>
+        </div>
+
+        <!--=============== MAIN "WINDOW" ===============-->
+
+        <div class="portfolio">
+            <!--=============== HEADER SECTION ===============-->
+
+            <section class="header">
+                <img class="header-img"
+                    src="img/Srujal's avatar pic.png"
+                    alt="" />
+                <h1>Srujal S. Shah</h1>
+                <h2> SMM | Web Developer <br> 
+                    Community Manager</h2>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/techking007" target="_blank" class="fa-brands fa-linkedin-in" id="profile-link"></a>
+                    <a href="https://github.com/techking007" target="_blank" class="fa-brands fa-github"></a>
+                    <a href="https://twitter.com/techking_007?t=8CzDD1mBMI93xucz7P9bXw&s=09" target="_blank" class="fa-brands fa-twitter"></a>
+                    <a href="mailto:itechking007@gmail.com" target="_blank" class="fa-regular fa-envelope">
+                    
+                    </a>
+                </div>
+                <a href="Srujal's Resume.pdf" 
+                   class="cta" 
+                   download="Srujal_Shah_Resume.pdf"
+                   rel="noopener noreferrer"
+                   type="application/pdf">Download Resume</a>
+            </section>
+
+            <!--=============== CONTENT SECTION ===============-->
+
+            <div class="content">
+                <!--=============== HOME ===============-->
+
+                <section class="content-card home" id="welcome-section">
+                    <h1>Come here Often? Myself <span class="highlight-text">Srujal Shah</span>.</h1>
+                    <div class="scroll-down-arrow">
+                        <span class="scroll-text">Scroll for growth</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </section>
+
+                <!--=============== ABOUT ME ===============-->
+
+                <section class="content-card about" id="about">
+                    <h1>About me</h1>
+                    <div class="about-item about-me">
+                        <p>
+                            Hey, I'm Srujal Shah, a Computer Engineering student who's obsessed with creativity, communities, and all things digital. I've been working as a Social Media Manager, copywriter, Community Manager and also, developing projects and somehow, it all clicks. 
+
+
+                        </p>
+                        <p>
+                            Currently blending code with creativity and building brands that matter. Active in SuperteamDAO & Solana. Passionate about community, freelancing, and conversations around Web3, branding, hackathons, and entrepreneurship.
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <div class="about-item skills">
+                            <h1>Skills</h1>
+                            <span class="skill">Copywriting</span>
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">Node.js</span>
+                            <span class="skill">React</span>
+                            <span class="skill">Expressjs</span>
+                            <span class="skill">Figma</span>
+                            <span class="skill">Notion</span>
+                            <span class="skill">Framer</span>
+                            <span class="skill">SEO</span>
+                            <span class="skill">Canva</span>
+                            
+                        </div>
+
+                        <div class="about-item languages">
+                            <h1>Languages</h1>
+                            <div class="language">
+                                <p>Gujarati</p>
+                                <span class="bar"><span class="gujarati"></span></span>
+                            </div>
+                            <div class="language">
+                                <p>English</p>
+                                <span class="bar"><span class="english"></span></span>
+                            </div>
+                            <div class="language">
+                                <p>Hindi</p>
+                                <span class="bar"><span class="hindi"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=============== PROJECTS ===============-->
+
+                <section class="content-card projects" id="projects">
+                    <h1>Projects</h1>
+                    <div class="col-2 project-list">
+                        <div class="project-tile" onclick="openProjectModal(this)">
+                            <div class="project-image-container">
+                                <img src="img/Ideadump .png" alt="IdeadUmp Project" />
+                            </div>
+                            <div class="project-title">Ideadump</div>
+                            <div class="overlay">
+                                <div class="project-modal">
+                                    <span class="modal-close" onclick="closeProjectModal(event)">&times;</span>
+                                    <div class="project-description">
+                                        <h3>Ideadump</h3>
+                                        <p>A platform for idea shippers to save their idea inspos at a curated space to build later on</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/techking007/Ideadump" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                            <a href="https://ideadump-five.vercel.app/" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tile" onclick="openProjectModal(this)">
+                            <div class="project-image-container">
+                                <img src="img/Swift Summarizer.png" alt="Swift Summarizer Project Thumbnail" />
+                            </div>
+                            <div class="project-title">Swift Summarizer</div>
+                            <div class="overlay">
+                                <div class="project-modal">
+                                    <span class="modal-close" onclick="closeProjectModal(event)">&times;</span>
+                                    <div class="project-description">
+                                        <h3>Swift Summarizer</h3>
+                                        <p>An AI-powered browser extension to summarize articles effectively.</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/techking007/Article-summarizer-extension" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                            <a href="https://swiftsummarizer.vercel.app/" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tile" onclick="openProjectModal(this)">
+                            <div class="project-image-container">
+                                <img src="img/Quote Idea.png" alt="Quote Idea Project Thumbnail" />
+                            </div>
+                            <div class="project-title">Quote Idea</div>
+                            <div class="overlay">
+                                <div class="project-modal">
+                                    <span class="modal-close" onclick="closeProjectModal(event)">&times;</span>
+                                    <div class="project-description">
+                                        <h3>Quote Idea</h3>
+                                        <p>A random quote generator with intent tweet functionality.</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/techking007/Quote-Idea" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                            <a href="https://quote-idea.vercel.app/" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tile" onclick="openProjectModal(this)">
+                            <div class="project-image-container">
+                                <img src="img/Minifolio.png" alt="Minifolio Project Thumbnail" />
+                            </div>
+                            <div class="project-title">Minifolio</div>
+                            <div class="overlay">
+                                <div class="project-modal">
+                                    <span class="modal-close" onclick="closeProjectModal(event)">&times;</span>
+                                    <div class="project-description">
+                                        <h3>Minifolio</h3>
+                                        <p>A minimalistic portfolio website for developers and marketers to showcase their work.</p>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                            <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://github.com/techking007">see more...</a>
+                </section>
+
+                <!--=============== EXPERIENCE ===============-->
+
+                <section class="content-card experience" id="experience">
+                    <h1>Experience</h1>
+                    <div class="timeline">
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Feb, 2024 - now</div>
+                                <div class="timeline-content">
+                                    <h3>SMM | Community Manager <a href="https://www.instagram.com/apexia_club/" target="_blank">@Apexia</a></h3>
+                                    <p>
+                                        Co-Founder of Apexia, a community of 700+ members. Currently working as the Community MAanger and SMM at Apexia, where I've grown the community by organizing engaging events focused on both tech and non-tech skill-building.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Jan, 2025 - March, 2025</div>
+                                <div class="timeline-content">
+                                    <h3>Joint SMM Head <a href="https://www.instagram.com/svitprakarsh/" target="_blank">@ISTE, SVIT</a></h3>
+                                    <p>
+                                        Worked as a Joint SMM Head at ISTE-SVIT, where I was responsible for managing the social media presence of the Annual tech fest, Prakarsh and Tune Carnival, generating 400k+ impressions for both events.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Aug, 2023- Nov, 2023</div>
+                                <div class="timeline-content">
+                                    <h3>UX & Copywriter <a href="https://instinkt.in/" target="_blank">@Instinkt</a></h3>
+                                    <p>
+                                        Worked as a UI/UX Designer and Content Writer at Instinkt, leading the development of a client website by combining design and storytelling.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Aug, 2023- Sept., 2023</div>
+                                <div class="timeline-content">
+                                    <h3>Content Writer & Videographer <a href="https://www.instagram.com/tedx_svit/" target="_blank">@TEDxSVIT</a></h3>
+                                    <p>
+                                        Contributed as a Content Writer and Videographer at TEDxSVIT, where I helped shape the event's narrative and visual storytelling through written content and video production.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">May, 2023- Aug, 2023</div>
+                                <div class="timeline-content">
+                                    <h3>Core Team <a href="https://x.com/web3conf_india" target="_blank">@Web3Conf India</a></h3>
+                                    <p>
+                                        Served as a Core Team Member at Web3Conf India, leading social media and community initiatives while successfully securing sponsorship deals worth over $50K.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">March, 2023- Apri, 2023</div>
+                                <div class="timeline-content">
+                                    <h3>Volunteer <a href="https://www.instagram.com/vadodarafoss/" target="_blank">@VadodaraFOSS</a></h3>
+                                    <p>
+                                        I held the position of Content Writer at VadodaraFOSS, where I contributed to the organization's content development
+                                        initiatives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=============== CONTACT ===============-->
+
+                <section class="content-card contact" id="contact">
+                    <h1>Contact</h1>
+                    <form class="form" id="form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="de45216e-d620-45c3-a515-2c49b3caa0fa">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <input type="hidden" name="from_name" value="Srujal's Portfolio Contact Form">
+                        <input type="hidden" name="subject" value="New Contact Form Submission">
+                        <div class="input-box">
+                            <input type="text" class="text-input" name="name" placeholder="Name" required />
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="text-input" name="email" id="email" placeholder="Email" required />
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="text-input" name="subject" id="subject" placeholder="Subject" required />
+                        </div>
+                        <div class="input-box">
+                            <textarea name="message" class="message" placeholder="Message..." required></textarea>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit-btn" id="submit" value="Submit" />
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Step 1: Initialize variables and check device type
+        const isMobile = window.matchMedia('(max-width: 750px)').matches;
+        let currentOpenModal = null;
+
+        // Step 2: Handle project tile click
+        function openProjectModal(projectTile) {
+            // Only proceed if mobile or if clicked on a link/button on desktop
+            if (!isMobile && !event.target.closest('.project-links')) {
+                return; // Don't open modal on desktop unless clicking links
+            }
+
+            // Get the overlay element
+            const overlay = projectTile.querySelector('.overlay');
+            if (!overlay) return;
+
+            // Step 3: Prepare the modal opening
+            currentOpenModal = overlay;
+            
+            // Lock scroll only on desktop
+            if (!isMobile) {
+                document.body.classList.add('modal-open');
+            }
+
+            // Step 4: Show the modal with animation
+            requestAnimationFrame(() => {
+                overlay.classList.add('active');
+            });
+
+            // Step 5: Add event listeners for closing
+            overlay.addEventListener('click', handleOverlayClick);
+            document.addEventListener('keydown', handleEscapeKey);
+        }
+
+        // Step 6: Handle modal closing
+        function closeProjectModal(event) {
+            if (event) {
+                event.stopPropagation(); // Prevent event bubbling
+            }
+
+            if (!currentOpenModal) return;
+
+            // Step 7: Start closing animation
+            currentOpenModal.classList.remove('active');
+
+            // Step 8: Clean up after animation
+            setTimeout(() => {
+                // Only restore scroll on desktop
+                if (!isMobile) {
+                    document.body.classList.remove('modal-open');
+                }
+                currentOpenModal = null;
+            }, 300); // Match this with CSS transition duration
+
+            // Step 9: Remove event listeners
+            document.removeEventListener('keydown', handleEscapeKey);
+        }
+
+        // Step 10: Handle clicking outside the modal
+        function handleOverlayClick(event) {
+            if (event.target.classList.contains('overlay')) {
+                closeProjectModal();
+            }
+        }
+
+        // Step 11: Handle escape key press
+        function handleEscapeKey(event) {
+            if (event.key === 'Escape') {
+                closeProjectModal();
+            }
+        }
+
+        // Step 12: Handle window resize
+        window.addEventListener('resize', () => {
+            const isNowMobile = window.matchMedia('(max-width: 750px)').matches;
+            if (currentOpenModal && isNowMobile !== isMobile) {
+                closeProjectModal();
+            }
+        });
+
+        // Form submission handling
+        const form = document.getElementById('form');
+        const submitButton = document.getElementById('submit');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Disable submit button and show loading state
+            submitButton.disabled = true;
+            submitButton.value = 'Sending...';
+
+            try {
+                // Get form data
+                const formData = new FormData(this);
+                const formObject = Object.fromEntries(formData);
+
+                // Submit to Web3Forms
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formObject)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Optional: Submit to Google Sheets
+                    try {
+                        await fetch('https://script.google.com/macros/s/AKfycbwTl9V3G8RbSOp-2XEGTQAyHkA1m6gpbK2ygiP5tgbBG3Fy18HvMFIcHI4Sbjly-au6DA/exec', {
+                            method: 'POST',
+                            mode: 'no-cors',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                name: formObject.name,
+                                email: formObject.email,
+                                subject: formObject.subject,
+                                message: formObject.message
+                            })
+                        });
+                    } catch (error) {
+                        console.error('Google Sheets Error:', error);
+                        // Continue with success flow even if Google Sheets fails
+                    }
+
+                    // Redirect to success page
+                    window.location.href = 'https://web3forms.com/success';
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('There was an error submitting the form. Please try again.');
+                
+                // Re-enable submit button
+                submitButton.disabled = false;
+                submitButton.value = 'Submit';
+            }
+        });
+    </script>
+</body>
+
+</html>
